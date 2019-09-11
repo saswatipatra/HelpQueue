@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import reallyAdorablePuppy from '../assets/images/cutestpuppy.jpg';
+import reallyAdorablePuppy from '../assets/images/cutestpuppy.jpg'
 
 
 function Ticket(props){
