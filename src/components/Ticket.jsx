@@ -3,7 +3,9 @@ import PropTypes from 'prop-types'
 import reallyAdorablePuppy from '../assets/images/cutestpuppy.jpg'
 
 
+
 function Ticket(props){
+  
   return (
     <div>
       <img src={reallyAdorablePuppy}/>
@@ -12,6 +14,7 @@ function Ticket(props){
             background-color: red;
           }
         `}</style>
+      <h4>{props.id}</h4>
       <h3>{props.location} - {props.names}</h3>
       <p><em>{props.issue}</em></p>
       <hr/>
@@ -22,7 +25,8 @@ function Ticket(props){
 Ticket.propTypes = {
   names: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
-  issue: PropTypes.string
+  issue: PropTypes.string,
+  key: PropTypes.string
 }
 
 export default Ticket
