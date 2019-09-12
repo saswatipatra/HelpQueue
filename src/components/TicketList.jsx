@@ -4,21 +4,19 @@ import PropTypes from 'prop-types'
 
 
 function TicketList(props){
-  
   return (
     <div>
       <hr/>
       {props.ticketList.map((ticket) =>
-      
         <Ticket names={ticket.names}
           location={ticket.location}
           issue={ticket.issue}
+          formattedWaitTime={ticket.formattedWaitTime}
           key={ticket.id}
-          id={ticket.id}
-          timeOpen={ticket.timeOpen}/>
+          id= {ticket.id}/>
       )}
     </div>
-  )
+  );
 }
 
 TicketList.propTypes = {
